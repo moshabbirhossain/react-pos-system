@@ -23,7 +23,7 @@ const AddCategory = () => {
                     <button type="submit" className="btn join-item rounded-r-full homeButton">Add Category</button>
                 </div>
             </form>
-            {/* Cateogyr Show */}
+            {/* Category Show */}
             <CategoryShow />
         </div>
     );

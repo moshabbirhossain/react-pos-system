@@ -20,7 +20,7 @@ const DashHeader = () => {
                 <div className="header-action">
                     <button onClick={posHandler} className="btn btn-main userButton">
                         <span className="material-symbols-outlined">
-                            cottage
+                            Cottage
                         </span>
                         POS
                     </button>

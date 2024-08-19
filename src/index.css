@@ -60,9 +60,9 @@ Basic Style
 .btm-nav {
   position: fixed;
   bottom: 10px;
-  left: 30px;
+  left: 164px;
   display: flex;
-  width: 43.7%;
+  width: 34%;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -96,7 +96,7 @@ Home page style
 }
 
 .cart-container {
-  width: 45%;
+  width: 36%;
 }
 
 /* =========================================
@@ -217,6 +217,7 @@ Cart style
   padding: 10px;
   box-shadow: 10px 10px 50px rgb(239, 238, 239);
   margin: 20px;
+  margin-left: 150px;
   border-radius: 10px;
   position: fixed;
   top: 0;

@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { resetData } from "../../redux/productSlice";
 import PayNowModal from "./PayNowModal";
 import { toast } from "react-toastify";
+import Payment from "../Payment/Payment";
+import Select from "../Select/Select";
 
 const CartTotal = ({ totalQty, totalPrice }) => {
     const productData = useSelector(state => state.posCart.productData);
@@ -11,12 +13,16 @@ const CartTotal = ({ totalQty, totalPrice }) => {
     return (
         <>
             <div>
-                <div className="cart-details mb-14">
-                    <ul className="menu bg-base-100 w-56 rounded-box">
-                        <li className="border m-2 "><a>Total QTY : {totalQty}</a></li>
-                        <li className="border m-2"><a>Sub Total : $ {totalPrice}</a></li>
-                        <li className="border m-2"><a><b>Total : $ {totalPrice}</b></a></li>
-                    </ul>
+                <div>
+                    <Select/>
+                    <Payment/>
+                </div>
+                <div className="py-16">
+                    <div className="bg-base-100 flex flex-row gap-2">
+                        <div className="border px-2 py-1 w-36 rounded"><a>Total QTY : {totalQty}</a></div>
+                        <div className="border px-2 py-1 w-36 rounded"><a>Sub Total : $ {totalPrice}</a></div>
+                        <div className="border px-2 py-1 w-36 rounded"><a><b>Total : $ {totalPrice}</b></a></div>
+                    </div>
                 </div>
 
                 <div className="cart-button">
