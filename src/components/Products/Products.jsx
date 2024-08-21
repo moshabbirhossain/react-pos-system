@@ -3,6 +3,7 @@ import ProductHeader from "./ProductHeader";
 import SingleProduct from './SingleProduct';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToCart } from "../../redux/productSlice";
+import Category from "../Category/Category";
 
 const Products = () => {
     const [search, setSearch] = useState('');
@@ -38,15 +39,18 @@ const Products = () => {
     return (
         <>
             <ProductHeader setSearch={setSearch} search={search} />
+            <Category/>
+            <div className="text-center pb-4">
             {
                 products.length === 0 ? 'No Product Found'
                     :
-                    <div className='single-product-container'>
+                    <div className='p-5 pl-0  grid grid-cols-2 lg:grid-cols-3 gap-5 ml-5'>
                         {products
                             .filter(item => item.id.toString().toLowerCase().includes(search.toLowerCase())) // Ensure item.id is a string before calling toLowerCase()
                             .map((item, i) => <SingleProduct key={i} item={item} />)}
                     </div>
             }
+            </div>
         </>
     );
 };

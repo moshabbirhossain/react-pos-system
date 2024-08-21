@@ -58,11 +58,11 @@ Basic Style
 }
 
 .btm-nav {
-  position: fixed;
-  bottom: 10px;
-  left: 164px;
+  /* position: fixed; */
+  /* bottom: 10px; */
+  /* left: 140px; */
   display: flex;
-  width: 34%;
+  /* width: 36%; */
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -90,13 +90,22 @@ Home page style
 ===========================================
 */
 .home-container {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 50px; */
 }
 
 .cart-container {
-  width: 36%;
+  /* background-color: white; */
+  /* padding: 8px; */
+  /* box-shadow: 10px 10px 50px rgb(239, 238, 239); */
+  /* margin-top: 20px; */
+  
+  /* border-radius: 10px; */
+  /* position: fixed; */
+  /* top: 0; */
+  /* left: 0; */
+  /* height: 100vh; */
 }
 
 /* =========================================
@@ -104,10 +113,10 @@ Product Page style
 ===========================================
 */
 .product-container {
-  width: 50%;
-  position: absolute;
+  /* width: 52%; */
+  /* position: absolute;
   top: 0;
-  right: 0;
+  right: 0; */
 }
 
 .addButton {
@@ -156,12 +165,12 @@ Single product style
 ===========================================
 */
 .single-product-container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: auto auto auto;
-  gap: 20px;
-  padding: 20px;
+  gap: 20px; */
+  /* padding: 20px;
   padding-left: 0px;
-  width: 200px;
+  width: 200px; */
 }
 
 .single-container {
@@ -208,23 +217,6 @@ Single product style
   left: 0;
 }
 
-/* =========================================
-Cart style
-===========================================
-*/
-.cart-container {
-  background-color: white;
-  padding: 10px;
-  box-shadow: 10px 10px 50px rgb(239, 238, 239);
-  margin: 20px;
-  margin-left: 150px;
-  border-radius: 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-}
-
 .qty {
   background: #E0E3FF;
   padding: 5px;
@@ -241,11 +233,11 @@ Cart style
   font-weight: 500;
 }
 
-.cart-total {
+/* .cart-total {
   position: absolute;
   bottom: 50px;
   left: 30px;
-}
+} */
 
 /* Pay now style */
 

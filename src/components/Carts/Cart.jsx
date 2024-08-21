@@ -8,7 +8,7 @@ const Cart = () => {
     return (
         <>
             <div className="main-cart-container">
-                <div className="cart-container">
+                <div className="cart-container relative">
                     <div className="cart-item">
                         <CartItem setTotalQty={setTotalQty} setTotalPrice={setTotalPrice} />
                     </div>
