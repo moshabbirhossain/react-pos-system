@@ -4,7 +4,7 @@ import { LuScanLine } from "react-icons/lu";
 
 const NewSideBar = () => {
     return (
-        <div className="text-sm font-semibold">
+        <div className="text-sm font-semibold overflow-x-hidden">
             <div className="  py-8 hover:rounded-lg w-32 hover:bg-gray-200 text-center cursor-pointer">
                 POS
             </div>
