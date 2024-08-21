@@ -21,7 +21,7 @@ const SingleProduct = ({ item }) => {
             className="single-main-container">
             <div className="single-container">
                 <div className="product-img">
-                    <img src={thumbnail} alt={title} />
+                    <img src={thumbnail} alt={title} className='rounded-md'/>
                 </div>
                 <div className="product-title">
                     <h5>{title}</h5>

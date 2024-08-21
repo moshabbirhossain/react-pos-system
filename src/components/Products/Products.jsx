@@ -40,9 +40,9 @@ const Products = () => {
         <>
             <ProductHeader setSearch={setSearch} search={search} />
             <Category/>
-            <div className="text-center pb-4">
+            <div className="pb-4">
             {
-                products.length === 0 ? <div className="my-10">No Product Found</div>
+                products.length === 0 ? <div className=" text-center my-10">No Product Found</div>
                     :
                     <div className='p-5 pl-0  grid grid-cols-2 lg:grid-cols-3 gap-5 ml-5'>
                         {products
