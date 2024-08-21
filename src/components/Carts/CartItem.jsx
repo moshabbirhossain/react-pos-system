@@ -20,7 +20,7 @@ const CartItem = ({ setTotalQty, setTotalPrice }) => {
     }, [productData])
     return (
         <div>
-            <div className="h-72 lg:h-80 w-full lg:w-[500px] overflow-x-hidden overflow-y-auto overscroll-y-none">
+            <div className="h-72 lg:h-96 w-full lg:w-[500px] overflow-x-hidden overflow-y-auto overscroll-y-none">
                 <table className="table">
                     <thead>
                         <tr>
